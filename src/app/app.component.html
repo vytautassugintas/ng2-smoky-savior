@@ -1,0 +1,24 @@
+<div class="content-holder">
+  <div>
+    <div class="money">
+      <p>{{moneySaved.toFixed(2)}} €</p>
+    </div>
+    <p class="timer-title">hold on for</p>
+    <div class="timer">
+      <p>{{timer.getTime()}}</p>
+    </div>
+    <div>
+      <button (click)="cheated()"
+              class="button primary">Cheated :(
+      </button>
+      <button (click)="saveMoney()"
+              class="button primary">Save money!
+      </button>
+    </div>
+    <div>
+      <button (click)="removeMoney()"
+              class="button">Remove money!
+      </button>
+    </div>
+  </div>
+</div>
